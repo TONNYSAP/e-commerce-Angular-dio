@@ -1,0 +1,20 @@
+img {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card-price {
+    background-color: #1fad1f;
+    padding: 20px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}

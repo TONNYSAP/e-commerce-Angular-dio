@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let book of books">
+
+      <div class="card h-100">
+        <img src="{{ book.img }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ book.titulo | uppercase }}</h5>
+          <p class="card-text">Categoria: {{ book.category }}</p>
+          <p class="card-text">Qtd.: {{ book.quantity }}</p>
+          <p class="card-price">{{ book.price | currency: 'BRL' }}</p>
+        </div>
+        <button class="btn btn-warning" (click)="AddItem()" type="button">Adicionar ao Carrinho 
+          <img src="../../../assets/img/black-shopping-cart-10933.svg" style="width: 20px;" alt="Carrinho de Compras">
+        </button>
+      </div>
+
+    </div>    
+  </div>
+</div>
